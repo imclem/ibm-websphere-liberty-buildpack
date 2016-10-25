@@ -32,11 +32,9 @@ $(ulimit -a)
 Free Disk Space (Before)
 ========================
 $(df -h)
-"
 
-pkill -9 -f .*-XX:OnOutOfMemoryError=.*killjava.*
+echo "NOT KILLING IT"
 
-echo "
 Process Status (After)
 ======================
 $(ps -ef)
